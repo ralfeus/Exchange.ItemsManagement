@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6A1E4FDA-0C2A-49D2-BF79-BDA5A601BB12}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>R.Microsoft.Exchange.ItemsManagement</RootNamespace>
+    <AssemblyName>R.Microsoft.Exchange.ItemsManagement</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Optimize>false</Optimize>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Exchange.Configuration.ObjectModel">
+      <HintPath>Resources\Microsoft.Exchange.Configuration.ObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Exchange.Data">
+      <HintPath>Resources\Microsoft.Exchange.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Exchange.Data.Directory">
+      <HintPath>Resources\Microsoft.Exchange.Data.Directory.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Exchange.Diagnostics">
+      <HintPath>Resources\Microsoft.Exchange.Diagnostics.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Exchange.Management">
+      <HintPath>Resources\Microsoft.Exchange.Management.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Exchange.WebServices, Version=15.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Microsoft\Exchange\Web Services\2.0\Microsoft.Exchange.WebServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Management.Automation" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cmdlets\BaseCmdlet.cs" />
+    <Compile Include="Cmdlets\CopyMailboxItem.cs" />
+    <Compile Include="Cmdlets\NewMailboxItem.cs" />
+    <Compile Include="Filter.cs" />
+    <Compile Include="Cmdlets\GetMailboxItem.cs" />
+    <Compile Include="EWSWrapper.cs" />
+    <Compile Include="Helpers.cs" />
+    <Compile Include="ProxyClasses\BaseProxyClass.cs" />
+    <Compile Include="ProxyClasses\Loader.cs" />
+    <Compile Include="Logger.cs" />
+    <Compile Include="ProxyClasses\ClassFactory.cs" />
+    <Compile Include="ProxyClasses\Microsoft.Exchange.WebServices\BasePropertySet.cs" />
+    <Compile Include="ProxyClasses\Microsoft.Exchange.WebServices\BodyType.cs" />
+    <Compile Include="ProxyClasses\Microsoft.Exchange.WebServices\ConnectingIdType.cs" />
+    <Compile Include="ProxyClasses\Microsoft.Exchange.WebServices\FindItemsResults.cs" />
+    <Compile Include="ProxyClasses\Microsoft.Exchange.WebServices\FolderId.cs" />
+    <Compile Include="ProxyClasses\Microsoft.Exchange.WebServices\ItemView.cs" />
+    <Compile Include="ProxyClasses\Microsoft.Exchange.WebServices\ExchangeVersion.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ProxyClasses\ADWebServicesVirtualDirectory.cs" />
+    <Compile Include="ProxyClasses\IConfigurable.cs" />
+    <Compile Include="ProxyClasses\Mailbox.cs" />
+    <Compile Include="ProxyClasses\MailboxIdParameter.cs" />
+    <Compile Include="ProxyClasses\Microsoft.Exchange.WebServices\ExchangeService.cs" />
+    <Compile Include="ProxyClasses\Microsoft.Exchange.WebServices\FindFoldersResults.cs" />
+    <Compile Include="ProxyClasses\Microsoft.Exchange.WebServices\Folder.cs" />
+    <Compile Include="ProxyClasses\Microsoft.Exchange.WebServices\FolderTraversal.cs" />
+    <Compile Include="ProxyClasses\Microsoft.Exchange.WebServices\FolderView.cs" />
+    <Compile Include="ProxyClasses\Microsoft.Exchange.WebServices\ImpersonatedUserId.cs" />
+    <Compile Include="ProxyClasses\Microsoft.Exchange.WebServices\Item.cs" />
+    <Compile Include="ProxyClasses\Microsoft.Exchange.WebServices\PropertySet.cs" />
+    <Compile Include="ProxyClasses\Microsoft.Exchange.WebServices\WellKnownFolderName.cs" />
+    <Compile Include="Snapin.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Microsoft.Exchange.WebServices.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

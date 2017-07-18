@@ -1,0 +1,14 @@
+P:\R.Microsoft.Exchange.ItemsManagement\R.Microsoft.Exchange.ItemsManagement\obj\x64\Debug\R.Microsoft.Exchange.ItemsManagement.csprojResolveAssemblyReference.cache
+P:\R.Microsoft.Exchange.ItemsManagement\R.Microsoft.Exchange.ItemsManagement\obj\x64\Debug\R.Microsoft.Exchange.ItemsManagement.Properties.Resources.resources
+P:\R.Microsoft.Exchange.ItemsManagement\R.Microsoft.Exchange.ItemsManagement\obj\x64\Debug\R.Microsoft.Exchange.ItemsManagement.csproj.GenerateResource.Cache
+P:\R.Microsoft.Exchange.ItemsManagement\R.Microsoft.Exchange.ItemsManagement\bin\x64\Debug\R.Microsoft.Exchange.ItemsManagement.dll
+P:\R.Microsoft.Exchange.ItemsManagement\R.Microsoft.Exchange.ItemsManagement\bin\x64\Debug\R.Microsoft.Exchange.ItemsManagement.pdb
+P:\R.Microsoft.Exchange.ItemsManagement\R.Microsoft.Exchange.ItemsManagement\bin\x64\Debug\Microsoft.Exchange.Configuration.ObjectModel.dll
+P:\R.Microsoft.Exchange.ItemsManagement\R.Microsoft.Exchange.ItemsManagement\bin\x64\Debug\Microsoft.Exchange.Data.Directory.dll
+P:\R.Microsoft.Exchange.ItemsManagement\R.Microsoft.Exchange.ItemsManagement\bin\x64\Debug\Microsoft.Exchange.Data.dll
+P:\R.Microsoft.Exchange.ItemsManagement\R.Microsoft.Exchange.ItemsManagement\bin\x64\Debug\Microsoft.Exchange.Diagnostics.dll
+P:\R.Microsoft.Exchange.ItemsManagement\R.Microsoft.Exchange.ItemsManagement\bin\x64\Debug\Microsoft.Exchange.Management.dll
+P:\R.Microsoft.Exchange.ItemsManagement\R.Microsoft.Exchange.ItemsManagement\bin\x64\Debug\Microsoft.Exchange.WebServices.dll
+P:\R.Microsoft.Exchange.ItemsManagement\R.Microsoft.Exchange.ItemsManagement\bin\x64\Debug\Microsoft.Web.Administration.dll
+P:\R.Microsoft.Exchange.ItemsManagement\R.Microsoft.Exchange.ItemsManagement\obj\x64\Debug\R.Microsoft.Exchange.ItemsManagement.dll
+P:\R.Microsoft.Exchange.ItemsManagement\R.Microsoft.Exchange.ItemsManagement\obj\x64\Debug\R.Microsoft.Exchange.ItemsManagement.pdb
